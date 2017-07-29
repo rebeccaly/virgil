@@ -4,7 +4,7 @@ Virgil Card Service is one foundation for the Public Key Infrastructure (PKI) th
 
 - [The Public/Private Key Pair](#head1)
 - [The Virgil Card Request](#head2)
-- [The Virgil Card Authority](#head3)
+- [The Virgil Card Validation](#head3)
 - [The Virgil Card](#head4)
 - [Your Public Key Used for Encryption](#head5)
 - [Your Public Key Used for Signature Verification](#head6)
