@@ -101,6 +101,9 @@ Any data that has been encoded for transmission to or received from a person or 
 ## National Institute of Standards and Technology
 (NIST) A division of the United States Department of Commerce that publishes official standards for both government and private sector computer systems. These standards are published as Federal Information Processing Standards(FIPS) publications. In 1987, NIST was directed to define standards for ensuring the security of sensitive but unclassified information in government computer systems.
 
+## Plaintext
+A message that is not encrypted. Plaintext messages are sometimes referred to as cleartext messages.
+
 ## Private Key
 The secret half of a key pair used in a Public Key algorithm. Private keys are typically used to encrypt a symmetric session key, digitally sign a message, or decrypt a message that has been encrypted with the corresponding Public Key.
 
