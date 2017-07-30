@@ -1,6 +1,6 @@
 # Virgil Card and Public Key
 
-Virgil Card Service is one foundation for the Public Key Infrastructure (PKI) that provides the means for safeguarding and authenticating information. The relationship between a Virgil Card holder, the Virgil Card holder's identity, and the Virgil Card holder's Public Key is a critical portion of PKI. This infrastructure is made up of the following parts:
+Virgil Card Service is one foundation for the Public Key Infrastructure (PKI) that provides the means for safeguarding and authenticating information. The relationship between a Virgil Card holder, the Virgil Card holder's identity, and the Virgil Card holder's [Public Key](https://github.com/VirgilSecurity/virgil/blob/wiki/wiki/glossary.md#public-key) is a critical portion of PKI. This infrastructure is made up of the following parts:
 
 - [The Public/Private Key Pair](#head1)
 - [The Virgil Card Request](#head2)
