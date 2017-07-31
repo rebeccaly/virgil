@@ -16,7 +16,7 @@ The process of verifying that a message was created by a specific individual (or
 A specially formatted electronic message (sent to a server) used to request a card. The request must contain the information required by the application to authenticate the request, plus the public key of the entity requesting the card.
 
 ## Card Service
-Virgil Card Service is a repository for all Virgil Cards after their publishing. This service has the role of issuing Virgil Cards or denying requests for Cards, it also provides the ability to search and revoke Virgil Cards. The ability to issue, distribute, revoke, and manage Virgil Cards, provides the necessary capabilities for Public Key infrastructure.
+Virgil Card Service is a dedicated service to store and manage Virgil Cardsis. This service has the role of issuing Virgil Cards or denying requests for Cards, it also provides the ability to search and revoke Virgil Cards. The ability to issue, distribute, revoke, and manage Virgil Cards, provides the necessary capabilities for Public Key infrastructure.
 
 ## Ciphertext
 A message that has been encrypted.
