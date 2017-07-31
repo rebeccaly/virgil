@@ -1,5 +1,15 @@
-## An Access token
+## Access token
 An access token provides authenticated and secure access to Virgil Security services. The access token also allows the API to associate your app requests with your Virgil Security Developer’s account.
+
+## Action ID
+An ID used to compare a confirmation code with a related validation action.
+
+## Application Key (APP KEY)
+This is a Private Key, that is generated in pair with a Public Key, which is part of an App's Card. During Key Pair generation at the Virgil Development Portal, the App Key is encrypted with an additional password. The App Key has a DER format.
+
+## Application ID (APP ID)
+This is an identifier, which uniquely identifies an Application at Virgil Services.
+During Application Registration at the Virgil Development Portal, the App ID is created on the App's Virgil Card. The Card has its own ID, which is also the App ID
 
 ## Asymmetric Algorithm
 Asymmetric cryptography is a branch of cryptography where a secret key can be divided into two parts, a public key and a private key. The public key can be given to anyone, trusted or not, while the private key must be kept secret (just like the key in symmetric cryptography).
@@ -12,6 +22,10 @@ One of a pair of keys used with an asymmetric cryptographic algorithm. Such an a
 ## Authentication
 The process of verifying that a message was created by a specific individual (or program). Like encryption, authentication can be either symmetric or asymmetric. Authentication is necessary for effective encryption.
 
+## Athenticated Encryption
+The process of encrypting and then signing data using the Sender’s Virgil Key and the Recipient’s Virgil Card. In order to do this, the Sender’s Virgil Key must be loaded from the appropriate storage, then the Recipient’s Virgil Card must be searched for, followed by preparation of the data for transmission, which is finally signed and encrypted before being sent.
+Authenticated Decryption - the process of taking data that is already both encrypted and signed, and then decrypting and verifying the data. A recipient uses their Virgil Key to decrypt the data, which is followed by using the Sender’s Virgil Card to verify the integrity of the data.
+
 ## Card Request
 A specially formatted electronic message (sent to a server) used to request a card. The request must contain the information required by the application to authenticate the request, plus the public key of the entity requesting the card.
 
@@ -19,10 +33,19 @@ A specially formatted electronic message (sent to a server) used to request a ca
 Virgil Card Service is a dedicated service to store and manage Virgil Cardsis. This service has the role of issuing Virgil Cards or denying requests for Cards, it also provides the ability to search and revoke Virgil Cards. The ability to issue, distribute, revoke, and manage Virgil Cards, provides the necessary capabilities for Public Key infrastructure.
 
 ## Ciphertext
-A message that has been encrypted.
+Applying an encryption algorithm (or cipher) to some plaintext results in the creation of a Ciphertext. The Ciphertext is encoded information that contains an encrypted form of the plaintext, but is unreadable to any human or computer without the proper Decryption Algorithm, which is based on a private key.
+
+## Command Line Interface (CLI)
+A program and command line tool for utilizing Virgil Services. The CLI can be used for a variety of actions on Virgil Services including, generating keys, retrieving keys, key search, key revocation, data encryption and decryption, data signature and verification, etc. The CLI is available for both Mac OS and Linux platforms.
+
+## Confirmation Code
+A code used to confirm ownership of a global identifier, such as an email or phone number.
 
 ## CryptoAPI
 Application programming interface that enables application developers to add authentication, encoding, and encryption to Windows-based applications.
+
+## Crypto Library
+A library of API function calls and cryptographic algorithms, used by developers to implement cryptography into their software. Virgil consists of an open-source encryption library, which implements Cryptographic Message Syntax (CMS) and Elliptic Curve Integrated Encryption Scheme (ECIES) (including RSA schema), a Key Management API, and a cloud-based Key Management Service (Virgil Keys).
 
 ## Cryptographic Algorithm
 A mathematical function used for encryption and decryption. Most cryptographic algorithms are based on a substitution cipher, a transposition cipher, or a combination of both.
@@ -41,7 +64,7 @@ The art and science of information security. It includes information confidentia
 The system program interface used with a cryptographic service provider (CSP).
 
 ## Decryption
-The process of converting ciphertext to plaintext. Decryption is the opposite of encryption.
+The process of taking encrypted information or ciphertext and converting it back into plaintext or an unencrypted form. This can only be done with the appropriate decryption algorithm and the associated private key, whose pair is the public key that encrypted the data in the first place.
 
 ## Diffie-Hellman algorithm
 (DH) A public key algorithm used for secure key exchange. Diffie-Hellman cannot be used for data encryption. This algorithm is specified as the key exchange algorithm.
@@ -54,6 +77,15 @@ Data that binds a sender's identity to the information being sent. A digital sig
 
 ## Digital Signature Standard
 (DSS) A standard that specifies the Digital Signature Algorithm (DSA) for its signature algorithm. DSA is a public key cipher that is only used to generate digital signatures and cannot be used for data encryption.
+
+## Encrypted Communication
+When two parties desire to communicate without some third-party knowing. This communication must not be able to be read or understood by any unauthorized party, leading to the need to use a cipher and/or code. Encrypted communication can be achieved through cryptographic means, which require the use of information based keys to encrypt and later decrypt some message.
+
+## Encrypted Storage
+The storage of data that is technically out in the open for anyone to access but unable to be read or understood by anyone except the holders of the appropriate cryptographic keys. Encryption must be end-to-end for any data to be stored safely.
+
+## Encrypting for Multiple Receipients
+Encryption requires the Virgil Card of the recipient, so that only the recipient’s Virgil Key can decrypt the message. For multiple recipients, the sender must have the Virgil Card of every recipient they intend to send a message to. The sender can find Virgil Cards for each recipient using Virgil Services, which they can then use to encrypt a message for each recipient, that can only be decrypted on an individual basis
 
 ## Encryption
 The process of converting plaintext to ciphertext to help prevent it from being read and understood by an unauthorized party. Encryption is the opposite of decryption.
@@ -79,8 +111,8 @@ The Virgil service is responsible for the validation of user identities in anyth
 ## Initialization Vector
 (IV) A sequence of random bytes appended to the front of the plaintext before encryption by a block cipher. Adding the initialization vector to the beginning of the plaintext eliminates the possibility of having the initial ciphertext block the same for any two messages. For example, if messages always start with a common header (a letterhead or "From" line) their initial ciphertext would always be the same, assuming that the same cryptographic algorithm and symmetric key was used. Adding a random initialization vector eliminates this from happening
 
-## Integrity
-The completeness and accuracy of a message after it has been sent or stored.
+## Integrity (Data Integrity)
+The ability to ensure and maintain that some data has a known sender (one who cannot deny having sent the data) and has not been altered over its life-cycle. Data integrity is meant to safeguard data from any unintended changes to it as a result of storage, processing, transmission, malicious intent, or human error. Proper data integrity measures ensure that the data is accurate, consistent, and has a verifiable origin. It is vital to any system that sends or receives data, where privacy is concerned.
 
 ## Key Length
 Values specified by some providers that indicate the length of the public/private key pairs and session keys used with that provider.
@@ -93,6 +125,9 @@ Any data that has been encoded for transmission to or received from a person or 
 
 ## National Institute of Standards and Technology
 (NIST) A division of the United States Department of Commerce that publishes official standards for both government and private sector computer systems. These standards are published as Federal Information Processing Standards(FIPS) publications. In 1987, NIST was directed to define standards for ensuring the security of sensitive but unclassified information in government computer systems.
+
+## Perfect Forward Secrecy (PFS)
+PFS is a technique that protects previously intercepted traffic from being decrypted even if the main private key is compromised. With PFS enabled communication, a hacker could only access information that is actively transmitted because PFS forces a system to create different keys per session. In other words, PFS makes sure there is no master key to decrypt all the traffic.
 
 ## Plaintext
 A message that is not encrypted. Plaintext messages are sometimes referred to as cleartext messages.
