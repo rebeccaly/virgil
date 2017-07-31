@@ -9,6 +9,9 @@ Encryption with asymmetric cryptography works in a slightly different way from s
 ## Asymmetric Key
 One of a pair of keys used with an asymmetric cryptographic algorithm. Such an algorithm uses two cryptographic keys: a "public key" for encryption and a "private key" for decryption. In signature and verification, the roles are reversed: the public key is used for verification, and the private key is used for signature generation. The most important feature of such algorithms is that their security does not depend on keeping the public key secret (though it may require some assurance of authenticity of public keys, for example, that they be obtained from a trusted source). Secrecy of the private key is required.
 
+## Authentication
+The process of verifying that a message was created by a specific individual (or program). Like encryption, authentication can be either symmetric or asymmetric. Authentication is necessary for effective encryption.
+
 ## Card Request
 A specially formatted electronic message (sent to a server) used to request a card. The request must contain the information required by the application to authenticate the request, plus the public key of the entity requesting the card.
 
@@ -104,16 +107,13 @@ Any data that has been encoded for transmission to or received from a person or 
 A message that is not encrypted. Plaintext messages are sometimes referred to as cleartext messages.
 
 ## Private Key
-The secret half of a key pair used in a Public Key algorithm. Private keys are typically used to encrypt a symmetric session key, digitally sign a message, or decrypt a message that has been encrypted with the corresponding Public Key.
+This is one of two keys involved in public-key cryptography. It can be used to decrypt messages which were encrypted with the corresponding public key, as well as to create signatures, which can be verified with the corresponding public key. These must be kept secret, if they are exposed, all encrypted messages are compromised, and an attacker will be able to forge signatures.
 
 ## Privilege
 The right of a user to perform various application-related operations, such as reading, writing or changing something. A user's access token contains a list of the privileges held by either the user, the user's groups or devices.
 
-## Public/Private key pair
-A set of cryptographic keys used for Public Key cryptography. For each user, a cryptographic service provider usually maintains two public/private key pairs: an exchange key pair and a Digital Signature key pair. Both key pairs are maintained from session to session.
-
 ## Public Key
-A cryptographic key typically used when decrypting a session key or a digital signature. The Public Key can also be used to encrypt a message, guaranteeing that only the person with the corresponding Private Key can decrypt the message.
+This is one of two keys involved in public-key cryptography. It can be used to encrypt messages for someone possessing the corresponding private key and to verify signatures created with the corresponding private key. This can be distributed publicly, hence the name.
 
 ## Public Key algorithm
 An asymmetric cipher that uses two keys, one for encryption, the Public Key, and the other for decryption, the Private Key. As implied by the key names, the Public Key used to encode plaintext can be made available to anyone. However, the Private Key must remain secret. Only the Private Key can decrypt the ciphertext. The Public Key algorithm used in this process is slow (on the order of 1,000 times slower than symmetric algorithms), and is typically used to encrypt session keys or digitally sign a message.
@@ -145,14 +145,8 @@ A relatively short-lived cryptographic key, often negotiated by a client and a s
 ## SHA
 The CryptoAPI name for the Secure Hash Algorithm.
 
-## Signature Card
-A Virgil Card that contains a Public Key that is used to verify digital signatures.
-
-## Signature Key Pair
-The public/private key pair used for authenticating (digitally signing) messages. See [Public/Private key pair](https://github.com/VirgilSecurity/virgil/blob/wiki/wiki/glossary.md#publicprivate-key-pair)
-
-## Signature Private Key
-See [Private Key](https://github.com/VirgilSecurity/virgil/blob/wiki/wiki/glossary.md#private-key).  
+## Symmetric Cryptography
+Cryptographic operations where encryption and decryption use the same key.
 
 ## Symmetric Key
 A secret key used with a symmetric cryptographic algorithm (that is, an algorithm that uses the same key for both encryption and decryption). Such a key needs to be known to all communicating parties.
