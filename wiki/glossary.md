@@ -93,7 +93,7 @@ The completeness and accuracy of a message after it has been sent or stored.
 Values specified by some providers that indicate the length of the public/private key pairs and session keys used with that provider.
 
 ## Key Pair
-A private key and its related public key.
+The Public and Private key pair comprise of two uniquely related cryptographic keys (basically long random numbers). The Public Key is what its name suggests - Public. It is made available to everyone via a publicly accessible repository or directory. On the other hand, the Private Key must remain confidential to its respective owner. Because the key pair is mathematically related, whatever is encrypted with a Public Key may only be decrypted by its corresponding Private Key and vice versa.
 
 ## Message
 Any data that has been encoded for transmission to or received from a person or entity. Messages may be encrypted for privacy, digitally signed for authentication purposes, or both
