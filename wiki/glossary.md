@@ -99,6 +99,9 @@ Simplified message functions used to encode and encrypt (or decode and decrypt) 
 ## Exchange Key Pair
 A public/private key pair used to encrypt session keys so that they can be safely stored and exchanged with other users.
 
+## Global Virgil Card
+A Virgil Card is the primary entity of the Public Keys Service, it includes information about the user and their public key. The Virgil Card identifies a user by one of their available types, such as an email, a phone number, etc. Global Cards are created with the validation token received after verification through Virgil Identity Service. Any developer with a Virgil account can create a Global Virgil Card. Virgil Identity Service ensures the user that the account, with a particular email, has been verified and that the email owner is also the Identity owner.
+
 ## Hash
 A fixed-size result obtained by applying a mathematical function (the hashing algorithm) to an arbitrary amount of data. (Also known as "message digest.").
 
