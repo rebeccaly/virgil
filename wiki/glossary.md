@@ -156,7 +156,7 @@ Functions used to create and verify digital signatures.
 The public/private key pair used for authenticating (digitally signing) messages.
 
 ## Signature Private Key
-The private key of a signature key pair.
+See [Private Key](https://github.com/VirgilSecurity/virgil/blob/wiki/wiki/glossary.md#private-key).  
 
 ## Symmetric Key
 A secret key used with a symmetric cryptographic algorithm (that is, an algorithm that uses the same key for both encryption and decryption). Such a key needs to be known to all communicating parties.
