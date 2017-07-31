@@ -147,13 +147,13 @@ A relatively short-lived cryptographic key, often negotiated by a client and a s
 The CryptoAPI name for the Secure Hash Algorithm.
 
 ## Signature Card
-A Card that contains a public key that is used to verify digital signatures.
+A Virgil Card that contains a Public Key that is used to verify digital signatures.
 
 ## Signature Functions
 Functions used to create and verify digital signatures.
 
 ## Signature Key Pair
-The public/private key pair used for authenticating (digitally signing) messages.
+The public/private key pair used for authenticating (digitally signing) messages. See [Public/Private key pair](https://github.com/VirgilSecurity/virgil/blob/wiki/wiki/glossary.md#publicprivate-key-pair)
 
 ## Signature Private Key
 See [Private Key](https://github.com/VirgilSecurity/virgil/blob/wiki/wiki/glossary.md#private-key).  
