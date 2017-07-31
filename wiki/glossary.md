@@ -59,9 +59,6 @@ Data that binds a sender's identity to the information being sent. A digital sig
 ## Digital Signature Algorithm
 (DSA) A public key algorithm specified by Digital Signature Standard (DSS). DSA is only used to generate digital signatures. It cannot be used for data encryption.
 
-## Digital Signature Key Pair
-See signature key pair.
-
 ## Digital Signature Standard
 (DSS) A standard that specifies the Digital Signature Algorithm (DSA) for its signature algorithm. DSA is a public key cipher that is only used to generate digital signatures and cannot be used for data encryption.
 
@@ -148,9 +145,6 @@ The CryptoAPI name for the Secure Hash Algorithm.
 
 ## Signature Card
 A Virgil Card that contains a Public Key that is used to verify digital signatures.
-
-## Signature Functions
-Functions used to create and verify digital signatures.
 
 ## Signature Key Pair
 The public/private key pair used for authenticating (digitally signing) messages. See [Public/Private key pair](https://github.com/VirgilSecurity/virgil/blob/wiki/wiki/glossary.md#publicprivate-key-pair)
