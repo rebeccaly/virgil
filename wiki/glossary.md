@@ -15,6 +15,9 @@ The process of verifying that a message was created by a specific individual (or
 ## Card Request
 A specially formatted electronic message (sent to a server) used to request a card. The request must contain the information required by the application to authenticate the request, plus the public key of the entity requesting the card.
 
+## Card Service
+Virgil Card Service is a repository for all Virgil Cards after their publishing. This service has the role of issuing Virgil Cards or denying requests for Cards, it also provides the ability to search and revoke Virgil Cards. The ability to issue, distribute, revoke, and manage Virgil Cards, provides the necessary capabilities for Public Key infrastructure.
+
 ## Ciphertext
 A message that has been encrypted.
 
@@ -70,6 +73,9 @@ A fixed-size result obtained by applying a mathematical function (the hashing al
 ## Hashing Functions
 A set of functions used to create and destroy hash objects, get or set the parameters of a hash object, and hash data and session keys.
 
+## Identity service
+The Virgil service is responsible for the validation of user identities in anything from emails to applications.
+
 ## Initialization Vector
 (IV) A sequence of random bytes appended to the front of the plaintext before encryption by a block cipher. Adding the initialization vector to the beginning of the plaintext eliminates the possibility of having the initial ciphertext block the same for any two messages. For example, if messages always start with a common header (a letterhead or "From" line) their initial ciphertext would always be the same, assuming that the same cryptographic algorithm and symmetric key was used. Adding a random initialization vector eliminates this from happening
 
@@ -108,6 +114,9 @@ An asymmetric cipher that uses two keys, one for encryption, the Public Key, and
 
 ## Public Key Encryption
 Encryption that uses a pair of keys, one key to encrypt data and the other key to decrypt data. In contrast, symmetric encryption algorithms that use the same key for both encryption and decryption. In practice, Public Key cryptography is typically used to protect the session key used by a symmetric encryption algorithm. In this case, the public key is used to encrypt the session key, which in turn was used to encrypt some data, and the private key is used for decryption. In addition to protecting session keys, Public Key cryptography may also be used to digitally sign a message (using the Private Key) and validate the signature (using the Public Key).
+
+## Registration Authority (RA)
+The Virgil  service is a dedicated service to authorize the Virgil Card creation that is confirmed by a 3rd-party. For the majority of cases, it's enough to communicate to the Virgil Cards Service directly, except for the creation of a Global Virgil Card. For a Global Virgil Card, it's necessary to conduct the verification step to prove that the client holds the identity.
 
 ## Salt Value
 Random data that is sometimes included as part of a session key. When added to a session key, the plaintext salt data is placed in front of the encrypted key data. Salt values are added to increase the work required to mount a brute-force (dictionary) attack against data encrypted with a symmetric-key cipher.
