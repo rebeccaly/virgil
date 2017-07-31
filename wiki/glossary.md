@@ -18,9 +18,6 @@ A specially formatted electronic message (sent to a server) used to request a ca
 ## Ciphertext
 A message that has been encrypted.
 
-## Context
-The security data relevant to a connection. A context contains information such as a session key and duration of the session.
-
 ## CryptoAPI
 Application programming interface that enables application developers to add authentication, encoding, and encryption to Windows-based applications.
 
@@ -40,20 +37,8 @@ The art and science of information security. It includes information confidentia
 ## CryptoSPI
 The system program interface used with a cryptographic service provider (CSP).
 
-## Data Encryption
-See encryption.
-
-## Data Encryption Function
-See encryption and decryption functions.
-
 ## Decryption
 The process of converting ciphertext to plaintext. Decryption is the opposite of encryption.
-
-## DER
-See Distinguished Encoding Rules.
-
-## DH
-See Diffie-Hellman algorithm.
 
 ## Diffie-Hellman algorithm
 (DH) A public key algorithm used for secure key exchange. Diffie-Hellman cannot be used for data encryption. This algorithm is specified as the key exchange algorithm.
