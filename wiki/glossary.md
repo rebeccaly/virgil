@@ -103,7 +103,7 @@ A public/private key pair used to encrypt session keys so that they can be safel
 A Virgil Card is the primary entity of the Public Keys Service, it includes information about the user and their public key. The Virgil Card identifies a user by one of their available types, such as an email, a phone number, etc. Global Cards are created with the validation token received after verification through Virgil Identity Service. Any developer with a Virgil account can create a Global Virgil Card. Virgil Identity Service ensures the user that the account, with a particular email, has been verified and that the email owner is also the Identity owner.
 
 ## Hash
-A fixed-size result obtained by applying a mathematical function (the hashing algorithm) to an arbitrary amount of data. (Also known as "message digest.").
+A fixed-size result obtained by applying a mathematical function (the hashing algorithm) to an arbitrary amount of data.
 
 ## Hashing Functions
 A set of functions used to create and destroy hash objects, get or set the parameters of a hash object, and hash data and session keys.
@@ -129,6 +129,9 @@ Any data that has been encoded for transmission to or received from a person or 
 ## National Institute of Standards and Technology
 (NIST) A division of the United States Department of Commerce that publishes official standards for both government and private sector computer systems. These standards are published as Federal Information Processing Standards(FIPS) publications. In 1987, NIST was directed to define standards for ensuring the security of sensitive but unclassified information in government computer systems.
 
+## Passwordless Authentication
+The ability to log into applications or systems without the need for a password, by using Virgil Services to generate encrypted challenges and responses that can only be passed with the appropriate cryptographic keys. When an app receives permission to authorize users with a Virgil account, it can request authorization from Virgil Security when a user wants to log in without a password. Virgil verifies whether the app is trusted and receives user’s private key for further access to the system. If the key is correct, Virgil authenticates the user and returns an authorization code to the app. The app then receives an authentication token which allows for a unique and secure data transmission of the rest of the user details required to grant access to the application. This allows authorized users to access the application without a password, while maintaining a higher standard of security.
+
 ## Perfect Forward Secrecy (PFS)
 PFS is a technique that protects previously intercepted traffic from being decrypted even if the main private key is compromised. With PFS enabled communication, a hacker could only access information that is actively transmitted because PFS forces a system to create different keys per session. In other words, PFS makes sure there is no master key to decrypt all the traffic.
 
@@ -137,6 +140,9 @@ A message that is not encrypted. Plaintext messages are sometimes referred to as
 
 ## Private Key
 This is one of two keys involved in public-key cryptography. It can be used to decrypt messages which were encrypted with the corresponding public key, as well as to create signatures, which can be verified with the corresponding public key. These must be kept secret, if they are exposed, all encrypted messages are compromised, and an attacker will be able to forge signatures.
+
+## Private Key Password
+A password set for a private key adds an additional security stage and prevents any data leakage after the private key has been compromised. It is optional but highly recommended to set a private key password.
 
 ## Privilege
 The right of a user to perform various application-related operations, such as reading, writing or changing something. A user's access token contains a list of the privileges held by either the user, the user's groups or devices.
@@ -155,6 +161,9 @@ Encryption that uses a pair of keys, one key to encrypt data and the other key t
 
 ## Registration Authority (RA)
 The Virgil  service is a dedicated service to authorize the Virgil Card creation that is confirmed by a 3rd-party. For the majority of cases, it's enough to communicate to the Virgil Cards Service directly, except for the creation of a Global Virgil Card. For a Global Virgil Card, it's necessary to conduct the verification step to prove that the client holds the identity.
+
+## Recipient's Identifier
+An Identifier of a recipient's Virgil Card.
 
 ## Salt Value
 Random data that is sometimes included as part of a session key. When added to a session key, the plaintext salt data is placed in front of the encrypted key data. Salt values are added to increase the work required to mount a brute-force (dictionary) attack against data encrypted with a symmetric-key cipher.
@@ -182,3 +191,19 @@ Cryptographic operations where encryption and decryption use the same key.
 
 ## Symmetric Key
 A secret key used with a symmetric cryptographic algorithm (that is, an algorithm that uses the same key for both encryption and decryption). Such a key needs to be known to all communicating parties.
+
+## User Identity
+A type of Identity which is validated using a concatenated type and value of the Identity, signed by the application's private key.
+
+## Validation Token
+A validation token is used to prevent unauthorized card registration. The validation token is generated based on the Application's Private Key and Client Identity. The global ValidationToken is used for creating global Cards. The global ValidationToken can be obtained only by checking the ownership of the Identity on the Virgil Identity Service. The private ValidationToken is used for creating Private Cards. The private ValidationToken can be generated on the developer’s side, using their own service for verification, instead of the Virgil Identity Service. Developers can also completely avoid verification, by generating a validation token using the app’s Private Key created on our Developer portal.
+
+## Virgil Card
+The Virgil Card is the main entity of Virgil Services. Every user/device is represented with a Virgil Card which contains all the necessary information to identify them. Users will also need their Virgil Card to obtain their Virgil Key for further cryptographic operations.
+
+## Virgil Key
+The Virgil Key is a Private Key, which never leaves its device. The Virgil Key allows only those who hold it to sign and decode a message. The Virgil Key has a DER format.
+
+## Virgil Card ID
+A unique identifier of a Virgil Card. Virgil Card receives its ID after its publication on Virgil Services. It is used for every operation with Virgil Cards.
+Each Virgil Card is created by passing the content snapshot, which contains all data related to the Virgil Card, and is represented as a JSON. This JSON representation will be used to calculate the Virgil Card's Fingerprint. If you convert the Fingerprint to its hexadecimal representation, it will return the Virgil Card's ID.
