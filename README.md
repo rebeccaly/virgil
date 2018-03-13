@@ -4,12 +4,12 @@
 
 [Virgil Security](https://virgilsecurity.com) is a stack of security libraries and all the necessary infrastructure to enable seamless, end-to-end encryption for any application, platform or device. In a few simple steps you can encrypt communication, securely store data, provide passwordless login, and ensure data integrity.
 
-Our libraries allow developers to get up and running with Virgil API quickly and add full end-to-end security to their existing digital solutions to become HIPAA and GDPR compliant and more.
+Our libraries allow developers to get up and running with Virgil API quickly and add full end-to-end security to their existing digital solutions to become compliant with HIPAA, FERPA, GDPR and more.
 
-Virgil Security, Inc. guides software developers into the forthcoming security world in which everything will be encrypted (and passwords will be eliminated). In this world, the days of developers having to raise millions of dollars to build a secure chat, secure email, secure file-sharing, or a secure anything have come to an end. Now developers can instead focus on building features that give them a competitive market advantage while end-users can enjoy the privacy and security they increasingly demand.
+Virgil Security, Inc. guides software developers into the forthcoming security world in which everything will be encrypted (and passwords will be eliminated). In this world, the days of developers having to raise millions of dollars to build secure chat, secure email, secure file-sharing, or a secure anything have come to an end. Now developers can instead focus on building features that give them a competitive market advantage while end-users can enjoy the privacy and security they increasingly demand.
 ***
 
-# <a name="head3"></a>Developers Docs
+# <a name="head3"></a>Developer Docs
 - [.NET/C#](https://github.com/VirgilSecurity/virgil-sdk-net)
 - [Javascript/Node.js](https://github.com/VirgilSecurity/virgil-sdk-javascript)
 - [C/C++](https://github.com/VirgilSecurity/virgil-sdk-cpp)
@@ -40,9 +40,9 @@ Virgil Security, Inc. guides software developers into the forthcoming security w
 # <a name="head5"></a>License
 BSD 3-Clause. See [LICENSE](https://github.com/VirgilSecurity/virgil/blob/master/LICENSE) for details.
 
-# <a name="head6"></a>Contacts
+# <a name="head6"></a>Contact
 Our developer support team is here to help you.
 
-You can find us on [Twitter](https://twitter.com/VirgilSecurity) or send us email support@VirgilSecurity.com.
+You can find us on [Twitter](https://twitter.com/VirgilSecurity) or email us at support@VirgilSecurity.com.
 
 Also, get extra help from our support team on [Slack](https://join.slack.com/t/VirgilSecurity/shared_invite/enQtMjg4MDE4ODM3ODA4LTc2OWQwOTQ3YjNhNTQ0ZjJiZDc2NjkzYjYxNTI0YzhmNTY2ZDliMGJjYWQ5YmZiOGU5ZWEzNmJiMWZhYWVmYTM).
